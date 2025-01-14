@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Academy of Technology</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and container setup */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cc0000; /* Red background */
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 500px;
+        }
+
+        /* Center all content inside the container */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            max-height: 600px;
+            text-align: center;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px; /* Space between logo and title */
+            margin-bottom: 30px; /* Add space below the header */
+        }
+
+        header img {
+            height: 60px;
+            width: 60px;
+            object-fit: contain;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Form section styling */
+        main {
+            background-color: #ffffff; /* White background for the form */
+            color: #000000; /* Black text inside the form */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            color: #cc0000; /* Matching red color for heading */
+            margin-bottom: 20px;
+        }
+
+        .file-upload {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .file-upload label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .file-upload input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #cc0000; /* Matching red color */
+            color: #ffffff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons button:hover {
+            background-color: #a30000; /* Darker red on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://media.licdn.com/dms/image/v2/D560BAQGwQgMhkO5Fgg/company-logo_200_200/company-logo_200_200/0/1721116382761/global_academy_of_technology_logo?e=2147483647&v=beta&t=UZJVc2hw3_u7p32IhUCmxXC8gQMzL4DFw_ZbkW_5cLc" alt="Global Academy of Technology Logo">
+            <h1>Global Academy of Technology</h1>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <h2>Generate Student Form</h2>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="file-upload">
+                        <label for="studentDatabase">Upload Student Database (CSV):</label>
+                        <input type="file" id="studentDatabase" name="studentDatabase" accept=".csv">
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">Choose File</button>
+                        <button type="button">Generate Excel</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Global Academy of Technology. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
